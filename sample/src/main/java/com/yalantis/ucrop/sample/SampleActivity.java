@@ -318,6 +318,11 @@ public class SampleActivity extends BaseActivity {
 
        */
 
+//        Uri overlayUri = Uri.parse("https://staging.picsos.com/platform/asset/10640/617d8433243248eb6dac281c16151728/untitled-1.png");
+//        options.setOverlayUri(overlayUri);
+//        options.setShowCropGrid(false);
+//        options.setShowCropFrame(false);
+
         return uCrop.withOptions(options);
     }
 

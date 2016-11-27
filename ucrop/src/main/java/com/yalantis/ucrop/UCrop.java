@@ -245,6 +245,8 @@ public class UCrop {
         public static final String EXTRA_DIMMED_LAYER_COLOR = EXTRA_PREFIX + ".DimmedLayerColor";
         public static final String EXTRA_CIRCLE_DIMMED_LAYER = EXTRA_PREFIX + ".CircleDimmedLayer";
 
+        public static final String EXTRA_OVERLAY_URI = EXTRA_PREFIX + ".OverlayUri";
+
         public static final String EXTRA_SHOW_CROP_FRAME = EXTRA_PREFIX + ".ShowCropFrame";
         public static final String EXTRA_CROP_FRAME_COLOR = EXTRA_PREFIX + ".CropFrameColor";
         public static final String EXTRA_CROP_FRAME_STROKE_WIDTH = EXTRA_PREFIX + ".CropFrameStrokeWidth";
@@ -348,6 +350,10 @@ public class UCrop {
          */
         public void setCircleDimmedLayer(boolean isCircle) {
             mOptionBundle.putBoolean(EXTRA_CIRCLE_DIMMED_LAYER, isCircle);
+        }
+
+        public void setOverlayUri(Uri uri){
+            mOptionBundle.putParcelable(EXTRA_OVERLAY_URI, uri);
         }
 
         /**
